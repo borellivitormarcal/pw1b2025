@@ -11,6 +11,10 @@
             margin:0;
             padding:0;
             height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 700px;
         }
         table{
             background-color: #ffff00;
@@ -27,13 +31,16 @@
         td{
             border: 1px solid;
             border-radius:15px;
+            height: 70px;
         }
         th{
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
         .coringa{
-            padding: 0;
-            border:none;
+          display: flex;
+          justify-content: center;
+          border: none;
+          align-items: center;
         }
 
     </style>
@@ -67,7 +74,9 @@
         <tr>
             <td>12</td><!--Colunna B-->
             <td>26</td><!--Colunna I-->
-            <td><img src="imagens/coringa.png" width="60" height="80"></td><!--Colunna N-->
+            <td class="coringa">
+                <img src="imagens/coringa.png" width="60" height="80"></td><!--Colunna N-->
+            </td>
             <td>67</td><!--Colunna G-->
             <td>63</td><!--Colunna O-->
         </tr>
