@@ -3,7 +3,9 @@
     background-color: #ffff;
     width: 286px;
     height: 474px;
+    color: orangered;
+    align-items: center;
 }
-.card{
-    color: #ff8d0a;
+.body{
+    display: flex;
 }
