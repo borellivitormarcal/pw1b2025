@@ -107,6 +107,36 @@
        document.write(n)
        var g = []
        var o = []
-  </script>
+
+       function preencherlista(numeroinicial, numerofinal)
+       {
+           var retorno = []
+           for(var i = numeroinicial; i<= numerofinal; i++)
+           {
+               retorno.push(i)
+           }
+           return retorno
+       }
+       var b = preencherlista(1,15)
+       var i = preencherlista(16,30)
+       var n = preencherlista(31,45)
+       var g = preencherlista(46,60)
+       var o = preencherlista(61,75)
+       
+       function NumeroAleatorio(numeroMinimo, numeroMaximo)
+       {
+           var retorno = Math.random()
+           retorno = retorno*150
+           retorno = Math.floor(retorno)
+           if(retorno >= numeroMinimo)
+           {
+                return retorno
+           }else{
+               return NumeroAleatorio(numeroMinimo, numeroMaximo)
+           }
+       }
+
+       document.write("<h1>"+ NumeroAleatorio(140,150)+"<\h1>")
+</script>
 </body>
 </html>
