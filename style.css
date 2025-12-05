@@ -54,7 +54,7 @@ max-width: 425px;
     font-size: 15px;
 }
 
-.input-__search{
+.input__search{
     width: 100%;
     padding: 4%;
     outline: none;
@@ -67,8 +67,17 @@ max-width: 425px;
 
 .buttons{
     position: absolute;
-    bottom: 10%;
-    left: 50%;
+    bottom: 20%;
+    left: 80%;
     width: 65%;
     transform: translate(-57%, 0);
+}
+
+button{
+    width: 50%;
+    border: 2px solid #000;
+}
+
+.button:active{
+    background-color: red;
 }
